@@ -17,7 +17,7 @@ const Profile = () => {
     <div className="min-h-screen flex flex-col items-center bg-gray-100 p-4">
       <div className="max-w-3xl w-full bg-white shadow-md rounded-lg overflow-hidden ml-8">
         <div>
-          <div className="flex flex-col items-center mt-4 md:flex md:flex-row md:items-center md:pr-8">
+          <div className="flex flex-col items-center mt-8 ml-8 md:flex md:flex-row md:items-center md:pr-8">
             <div>
               <img
                 className="w-32 h-32 rounded-full mb-4 ml-8"
