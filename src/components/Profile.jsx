@@ -1,3 +1,17 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faNodeJs,
+  faGithub,
+  faFigma,
+  faTrello,
+  faJira,
+  faGit,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Profile = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 p-4">
@@ -17,13 +31,15 @@ const Profile = () => {
             </div>
             <a
               href="https://drive.google.com/file/d/1sr3-9oZ8cK-fegP5_nFugsxTHs7v1nwV/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-auto hover:bg-black hover:text-white bg-white-600 font-bold py-2 px-4 rounded border border-black mt-4"
             >
               Resume
             </a>
           </div>
           <p className="ml-8 font-bold">Hello World!</p>
-          <p className="mt-4 ml-8 text-start text-pretty">
+          <p className="mt-4 ml-8 text-start text-gray-700">
             I am Naphatthamon, a Frontend Developer specializing in writing
             clean, efficient code and creating user-friendly software solutions.
             Proficient in JavaScript languages. I enjoy debugging,
@@ -32,90 +48,91 @@ const Profile = () => {
           </p>
           <h3 className="font-bold mt-4 ml-8 text-start">Contact Me</h3>
           <div className="mt-4 ml-8">
-            <a href="https://linkedin.com" className="text-blue-500 mr-4">
+            <a
+              href="https://linkedin.com/in/naphatthamon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 mr-4"
+            >
               LinkedIn
             </a>
-            <a href="https://github.com" className="text-blue-500 mr-4">
+            <a
+              href="https://github.com/Suaiki93"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 mr-4"
+            >
               GitHub
             </a>
-            <a href="https://gmail.com" className="text-blue-500 mr-4">
+            <a href="mailto:example@gmail.com" className="text-blue-500 mr-4">
               Gmail
             </a>
           </div>
         </div>
         <div className="px-8 py-4 ">
           <h2 className="font-bold">PROJECTS</h2>
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            {[...Array(3)].map((_, i) => (
-              <a href="https://waywo.io" key={i} className="block">
+          <div className="flex items-center justify-center">
+            <div className="flex items-center">
+              <div className="w-1/2 h-45 mr-2 my-6">
                 <img
-                  className="w-full h-32 object-cover"
-                  src="./images/Yoga pic 1.jpg"
-                  alt="MERN Stack Ecommerce App"
+                  src="./images/project.png"
+                  alt="mockup"
+                  className="w-full h-full object-cover rounded-md"
                 />
-              </a>
-            ))}
+              </div>
+
+              <h3 className="text-lg font-semibold text-gray-800 ml-4">
+                Kick It Up Shoes Shop <br />
+                MERN Stack CRUD E-commerce Web Application
+              </h3>
+            </div>
           </div>
         </div>
-        <section className="ml-4 max-w-4xl mx-auto px-4 py-8">
+        <section className="ml-8 max-w-4xl mx-auto mb-8 ">
           <h2 className="text-lg font-bold text-gray-800 mb-4">Skills</h2>
-          <div className="grid grid-cols-5 gap-4">
-            {/* Replace icons with appropriate React components or images */}
-            <div className="flex items-center">
-              <i className="fab fa-html5 text-orange-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">HTML/CSS</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-css3 text-blue-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Tailwind CSS</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-js text-yellow-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">JavaScript</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-react text-blue-400 text-4xl mr-2"></i>
-              <span className="text-gray-800">React</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-node-js text-green-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Node.js</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-server text-gray-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Express.js</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-code text-purple-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">RESTful API</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-database text-indigo-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">SQL</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-database text-green-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">MongoDB</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-terminal text-gray-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Postman</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-git-alt text-gray-800 text-4xl mr-2"></i>
-              <span className="text-gray-800">Git/GitHub</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-figma text-pink-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Figma</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-trello text-sky-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Trello</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fab fa-jira text-green-500 text-4xl mr-2"></i>
-              <span className="text-gray-800">Jira</span>
+          <div className="grid grid-cols-5 gap-5">
+            <div className="col-span-5 flex justify-center mb-4">
+              {/* Centered Favicon */}
+              <FontAwesomeIcon
+                icon={faHtml5}
+                className="text-4xl text-orange-500 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faCss3}
+                className="text-4xl text-blue-500 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faJs}
+                className="text-4xl text-yellow-500 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faReact}
+                className="text-4xl text-blue-300 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faNodeJs}
+                className="text-4xl text-green-500 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faGit}
+                className="text-4xl text-blue-700 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-4xl text-gray-800 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faFigma}
+                className="text-4xl text-purple-500 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faTrello}
+                className="text-4xl text-blue-600 mx-2"
+              />
+              <FontAwesomeIcon
+                icon={faJira}
+                className="text-4xl text-blue-700 mx-2"
+              />
             </div>
           </div>
         </section>
