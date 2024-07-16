@@ -14,18 +14,18 @@ import {
 
 const Profile = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-100 p-4">
-      <div className="max-w-3xl w-full bg-white shadow-md rounded-lg overflow-hidden ml-8">
+    <div className="md:min-h-screen md:flex flex-col md:items-center md:bg-gray-100 p-4">
+      <div className="max-w-3xl w-full bg-white md:shadow-md md:rounded-lg md:overflow-hidden md:mx-8">
         <div>
-          <div className="flex flex-col items-center mt-8 ml-8 md:flex md:flex-row md:items-center md:pr-8">
+          <div className="flex flex-col items-center mt-8 md:ml-8 md:flex md:flex-row md:items-center md:pr-8">
             <div>
               <img
-                className="w-32 h-32 rounded-full mb-4 ml-8"
+                className="w-32 h-32 rounded-full mb-4 md:ml-8"
                 src="./images/B2.jpg"
                 alt="Naphatthamon J."
               />
             </div>
-            <div className="ml-8 ">
+            <div className="ml-8 text-center">
               <h1 className="text-2xl font-bold">Naphatthamon J.</h1>
               <p className="text-gray-600 text-center md:text-start">
                 Frontend Developer
